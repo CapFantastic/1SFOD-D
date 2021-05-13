@@ -1,5 +1,8 @@
-[![SFODD Logo](/Docs/cf_sfodd_logo.png)](https://github.com/CapFantastic/1SFOD-D)
+<img src="https://github.com/CapFantastic/1SFOD-D/blob/main/Docs/cf_sfodd_logo.png" alt="SFOD-D Logo" width="200px" height="200px">
+
 # Welcome To 1st SFOD-D Mod GitHub
+
+
 
 <details open="open">
     <summary>Table of Contents</summary>
@@ -42,6 +45,7 @@ This mod is distributed under the Arma Public Licence (APL)
 
 [>> Arma Public License](https://www.bohemia.net/community/licenses/arma-public-license)
 
+<img src="https://www.bohemia.net/assets/img/licenses/APL.png" alt="APL Logo">
 
 ## Contact
 Need to get in touch?
