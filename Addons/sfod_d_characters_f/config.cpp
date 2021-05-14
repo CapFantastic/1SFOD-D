@@ -6,7 +6,7 @@ File Name: config.cpp
 
 class CfgPatches 
 {
-	class SFOD_D_characters_f
+	class sfod_d_characters_f
 	{
 		units[] = 
 		{
@@ -25,7 +25,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = 
 		{
-			"SFOD_D_data_f"
+			"sfod_d_data_f"
 		};
 		author = "Capt. Fantastic";
 		authorUrl = "https://twitter.com/Captain12957861?lang=en";
