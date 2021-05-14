@@ -17,6 +17,7 @@ class CfgPatches
 			"SFOD_D_T4_1","SFOD_D_T4_2","SFOD_D_T4_3","SFOD_D_T4_4","SFOD_D_T4_5","SFOD_D_T4_6",
 			"SFOD_D_RC_1","SFOD_D_RC_2",
 			"SFOD_D_SR_1","SFOD_D_SR_2","SFOD_D_SR_3","SFOD_D_SR_4","SFOD_D_SR_5"
+			"SFOD_D_CL_1","SFOD_D_CL_2","SFOD_D_CL_3",
 		};
 		weapons[] = 
 		{
@@ -65,6 +66,10 @@ class CfgVehicleClasses {
 	class SFOD_D_SR 
 	{
 		displayName = "160th SOAR";
+	};
+	class SFOD_D_CL 
+	{
+		displayName = "Command Liaison";
 	};
 };
 class CfgVehicles
@@ -391,13 +396,13 @@ class CfgVehicles
 		_generalMacro = "SFOD_D_RC_1";
 		scope = 2;
 		displayName = "TEAM LEADER : SFC DREV";
-		vehicleClass = "SFOD_D_T3";
+		vehicleClass = "SFOD_D_RC";
 	};
 	class SFOD_D_RC_2 : SFOD_D_Medic_MCAM {					
 		_generalMacro = "SFOD_D_RC_2";
 		scope = 2;
 		displayName = "MEDIC : SSG SWAGGER";
-		vehicleClass = "SFOD_D_T3";
+		vehicleClass = "SFOD_D_RC";
 	};
 	//======================================================================
 	class SFOD_D_SR_1 : SFOD_D_TL_MCAM {					
@@ -410,25 +415,43 @@ class CfgVehicles
 		_generalMacro = "SFOD_D_SR_2";
 		scope = 2;
 		displayName = "PILOT : WO1 REYES";
-		vehicleClass = "SFOD_D_T3";
+		vehicleClass = "SFOD_D_SR";
 	};
 	class SFOD_D_SR_3 : SFOD_D_AR_MCAM {					
 		_generalMacro = "SFOD_D_SR_3";
 		scope = 2;
 		displayName = "PILOT : ";
-		vehicleClass = "SFOD_D_T3";
+		vehicleClass = "SFOD_D_SR";
 	};
 	class SFOD_D_SR_4 : SFOD_D_Op_MCAM {					
 		_generalMacro = "SFOD_D_SR_4";
 		scope = 2;
 		displayName = "CREW CHIEF : ";
-		vehicleClass = "SFOD_D_T3";
+		vehicleClass = "SFOD_D_SR";
 	};
 	class SFOD_D_SR_5 : SFOD_D_Op_MCAM {					
 		_generalMacro = "SFOD_D_SR_5";
 		scope = 2;
 		displayName = "CREW CHIEF : ";
-		vehicleClass = "SFOD_D_T3";
+		vehicleClass = "SFOD_D_SR";
+	};
+	class SFOD_D_CL_1 : SFOD_D_TL_MCAM {					
+		_generalMacro = "SFOD_D_CL_1";
+		scope = 2;
+		displayName = "COMMAND LIAISON : ";
+		vehicleClass = "SFOD_D_CL";
+	};
+	class SFOD_D_CL_2 : SFOD_D_TL_MCAM {					
+		_generalMacro = "SFOD_D_CL_2";
+		scope = 2;
+		displayName = "COMMAND LIAISON : ";
+		vehicleClass = "SFOD_D_CL";
+	};
+	class SFOD_D_CL_3 : SFOD_D_TL_MCAM {					
+		_generalMacro = "SFOD_D_CL_3";
+		scope = 2;
+		displayName = "COMMAND LIAISON : ";
+		vehicleClass = "SFOD_D_CL";
 	};
 };
 class CfgGroups
@@ -668,6 +691,41 @@ class CfgGroups
 				};
 				class SFOD_D_SR {
 					name = "160th SOAR";
+					side = 1;
+					faction = "SFOD_D";
+					class Unit0 {
+						side = 1;
+						vehicle = "SFOD_D_SR_1";
+						rank = SERGEANT;
+						position[] = {0, 0, 0};
+					};													
+					class Unit1 {
+						side = 1;
+						vehicle = "SFOD_D_SR_2";
+						rank = PRIVATE;
+						position[] = {2, 0, 0};
+					};							
+					class Unit2 {
+						side = 1;
+						vehicle = "SFOD_D_SR_3";
+						rank = PRIVATE;
+						position[] = {4, 0, 0};
+					};
+					class Unit3 {
+						side = 1;
+						vehicle = "SFOD_D_SR_4";
+						rank = PRIVATE;
+						position[] = {6, 0, 0};
+					};
+					class Unit4 {
+						side = 1;
+						vehicle = "SFOD_D_SR_5";
+						rank = PRIVATE;
+						position[] = {8, 0, 0};
+					};
+				};
+				class SFOD_D_CL {
+					name = "Command Liaison";
 					side = 1;
 					faction = "SFOD_D";
 					class Unit0 {
