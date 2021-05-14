@@ -8,7 +8,7 @@ File Name: config.cpp
 
 class CfgPatches 
 {
-	class SFOD_D_data_f
+	class sfod_d_data_f
 	{
 		units[] = 
 		{
