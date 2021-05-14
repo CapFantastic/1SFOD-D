@@ -435,6 +435,7 @@ class CfgVehicles
 		displayName = "CREW CHIEF : ";
 		vehicleClass = "SFOD_D_SR";
 	};
+	//======================================================================
 	class SFOD_D_CL_1 : SFOD_D_TL_MCAM {					
 		_generalMacro = "SFOD_D_CL_1";
 		scope = 2;
