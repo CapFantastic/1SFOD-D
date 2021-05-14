@@ -23,7 +23,7 @@ We pride ourselves on community based feedback and will be looking to produce se
 
 
 ## Roadmap
-Coming Soon
+[>> Trello Board](https://trello.com/b/DwQiaxSg/1st-sfod-d-custom-mod)
 
 
 ## Contributing
